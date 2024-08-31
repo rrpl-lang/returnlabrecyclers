@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer - Refurbished Lab Proposed Expansion Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            /* height: 150vh; */
+            height: auto;
+        }
+
+        .container {
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1), -10px -10px 30px rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            max-width: 1000px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .section-title {
+            font-size: 34px;
+            font-weight: 900;
+            color: #2e7d32;
+            text-align: center;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .section-title::before {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 4px;
+            background: #2e7d32;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -10px;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .text-section, .image-section {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .text-section {
+            font-size: 20px;
+            color: #424242;
+            line-height: 1.6;
+        }
+
+        .text-section ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .text-section ul li {
+            font-size: 18px;
+            color: #00796b;
+            background: #e0f2f1;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 10px;
+            position: relative;
+            animation: fadeInUp 0.5s ease-in-out forwards;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .text-section ul li:hover {
+            background: #b2dfdb;
+        }
+
+        .text-section ul li::before {
+            content: '\2713';
+            font-size: 20px;
+            color: #2e7d32;
+            position: absolute;
+            left: -30px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .image-section img, .image-section gif {
+            max-width: 100%;
+            border-radius: 15px;
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image-section img:hover, .image-section gif:hover {
+            transform: scale(1.05);
+        }
+
+        .why-section {
+            background: #e8f5e9;
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 30px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 700;
+            color: #2e7d32;
+            position: relative;
+            overflow: hidden;
+            animation: slideUp 1s ease-in-out;
+        }
+
+        .why-section::before {
+            content: '';
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 150px;
+            height: 150px;
+            background: rgba(46, 125, 50, 0.2);
+            border-radius: 50%;
+            z-index: -1;
+            animation: spin 10s linear infinite;
+        }
+
+        .why-section::after {
+            content: '';
+            position: absolute;
+            bottom: -50px;
+            left: -50px;
+            width: 150px;
+            height: 150px;
+            background: rgba(46, 125, 50, 0.2);
+            border-radius: 50%;
+            z-index: -1;
+            animation: spin 10s linear infinite reverse;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="container"> -->
+
+    
+    <!-- <div class="container"> -->
+        <!-- Section Title -->
+        <div class="section-title">After Sales Support</div>
+            <!-- Why Section -->
+        <div class="why-section">
+       
+            <!-- <ol> -->
+                Assigning one dedicated employee for After Sales Support is a great way to enhance customer satisfaction and ensure that our clients receive ongoing support after their purchase. Here’s how we can effectively implement this role.
+            <!-- </ul> -->
+        </div>
+        <!-- Content Section -->
+        <div class="content">
+            <!-- <li>Assigning one dedicated employee for After Sales Support is a great way to enhance customer satisfaction and ensure that our clients receive ongoing support after their purchase. Here’s how we can effectively implement this role. -->
+            <div class="text-section">
+            <!-- <p>Respops</p> -->
+                <!-- <p>As a developer, your role in the Refurbished Lab Proposed Expansion Project is crucial. Here’s what you will be focusing on:</p> -->
+                <ul>
+                 <!-- <li>Assigning one dedicated employee for After Sales Support is a great way to enhance customer satisfaction and ensure that our clients receive ongoing support after their purchase. Here’s how we can effectively implement this role. -->
+                <!-- </li> -->
+                <li><b>Role Definition</b><br>
+
+                    Primary Responsibilities: Clearly define the responsibilities of the After Sales Support role. This might include handling customer inquiries, troubleshooting issues, processing returns or exchanges, and providing guidance on product usage.
+                    <br>
+                    Performance Metrics: Establish key performance indicators (KPIs) such as response time, resolution time, customer satisfaction ratings, and the number of issues resolved.
+                    </li>
+                </ul>
+            </div>
+            <div class="text-section">
+                <!-- <p>Respops</p> -->
+                    <!-- <p>As a developer, your role in the Refurbished Lab Proposed Expansion Project is crucial. Here’s what you will be focusing on:</p> -->
+                    <ul>
+                      <li><b> Skill Requirements</b><br>
+
+                        Technical Knowledge: Ensure the employee has a deep understanding of the products or services offered, including common issues and solutions.
+                        <br>
+                        Communication Skills: Strong communication skills are essential for handling customer concerns effectively and professionally.
+                        Problem-Solving Ability: The employee should be adept at diagnosing issues and providing practical solutions quickly.</li>
+                    </ul>
+                </div>
+    
+          
+        </div>
+
+        <!-- Why Section -->
+        <!-- <div class="why-section">
+            Why?
+            <ul>
+                <li>Implementing the latest technology solutions.</li>
+                <li>Ensuring systems are modern, scalable, and efficient.</li>
+                <li>Integrating new software to enhance functionality.</li>
+                <li>Optimizing current systems for better performance.</li>
+                <li>Developing innovative solutions to streamline operations.</li>
+                <li>Aligning technical aspects with overall project goals.</li>
+            </ul>
+        </div> -->
+        <a href="index.html">Home</a>
+    <!-- </div> -->
+</div>
+</body>
+</html>

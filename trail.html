@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowchart - Refurbished Proposed Expansion Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e0f7fa;
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .box {
+            background: linear-gradient(145deg, #ffffff, #d1d9e6);
+            box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 16px;
+            text-align: center;
+            position: relative;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, opacity 0.5s ease-in-out;
+            cursor: pointer;
+            width: 100%;
+            max-width: 400px;
+            opacity: 0; /* Initially hidden */
+            transform: translateY(20px); /* Initially positioned below */
+        }
+
+        .main-box {
+            font-size: 28px;
+            font-weight: bold;
+            color: #00695c;
+        }
+
+        .sub-box {
+            font-size: 20px;
+            font-weight: 600;
+            color: #004d40;
+            margin-top: 20px;
+        }
+
+        .nested-box {
+            background: #b2ebf2;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 12px;
+            font-size: 16px;
+            color: #004d40;
+            position: relative;
+            animation: fadeInUp 0.5s ease-in-out;
+        }
+
+        .inner-nested-box {
+            background: #ffcdd2;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 14px;
+            color: #c62828;
+            animation: fadeInUp 0.5s ease-in-out 0.3s;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .sub-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            width: 100%;
+            margin-top: 40px;
+            position: relative;
+        }
+
+        .sub-container::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background-color: #00695c;
+            z-index: -1;
+        }
+
+        .sub-container .box {
+            margin: 0 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Main Box -->
+        <div class="box main-box">
+            Refurbished Lab Proposed Expansion Project
+        </div>
+
+        <!-- Sub Containers -->
+        <div class="sub-container">
+            <!-- Technology Box -->
+            <div class="box sub-box">
+                Technology
+                <div class="box nested-box">Person1 (Developer)</div>
+                <div class="box nested-box">Person2 (Digital Marketer)</div>
+            </div>
+
+            <!-- Sales Team Expansion Box -->
+            <div class="box sub-box">
+                Sales Team Expansion
+                <div class="box nested-box">Converting the buying staff into end-user sales</div>
+                <div class="box nested-box">Expanding the team from 4 to 8 members</div>
+                <div class="box nested-box">After-sales service</div>
+            </div>
+
+            <!-- Dispatch + COD Box -->
+            <div class="box sub-box">
+                Dispatch + COD
+                <div class="box nested-box">COD Team
+                    <div class="box inner-nested-box">Implementing COD with two employees within city limits</div>
+                </div>
+                <div class="box nested-box">Dispatch Team
+                    <div class="box inner-nested-box">Addition of one more employee to Dispatch</div>
+                </div>
+            </div>
+
+            <!-- Renovation Box -->
+            <div class="box sub-box">Renovation</div>
+
+            <!-- Innovation Box -->
+            <div class="box sub-box">Innovation</div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to sequentially display each box
+        document.addEventListener("DOMContentLoaded", function () {
+            const boxes = document.querySelectorAll(".box");
+            let delay = 0;
+
+            boxes.forEach((box, index) => {
+                setTimeout(() => {
+                    box.style.opacity = 1;
+                    box.style.transform = "translateY(0)";
+                }, delay);
+                delay += 500; // Increase delay for each subsequent box
+            });
+        });
+    </script>
+</body>
+</html>

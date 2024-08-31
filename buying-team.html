@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer - Refurbished Lab Proposed Expansion Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: auto;
+        }
+
+        .container {
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1), -10px -10px 30px rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            max-width: 1000px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .section-title {
+            font-size: 34px;
+            font-weight: 900;
+            color: #2e7d32;
+            text-align: center;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .section-title::before {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 4px;
+            background: #2e7d32;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -10px;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .text-section, .image-section {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .text-section {
+            font-size: 20px;
+            color: #424242;
+            line-height: 1.6;
+        }
+
+        .text-section ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .text-section ul li {
+            font-size: 18px;
+            color: #00796b;
+            background: #e0f2f1;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 10px;
+            position: relative;
+            animation: fadeInUp 0.5s ease-in-out forwards;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .text-section ul li:hover {
+            background: #b2dfdb;
+        }
+
+        .text-section ul li::before {
+            content: '\2713';
+            font-size: 20px;
+            color: #2e7d32;
+            position: absolute;
+            left: -30px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .image-section img, .image-section gif {
+            max-width: 100%;
+            border-radius: 15px;
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image-section img:hover, .image-section gif:hover {
+            transform: scale(1.05);
+        }
+
+        .why-section {
+            background: #e8f5e9;
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 30px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 700;
+            color: #2e7d32;
+            position: relative;
+            overflow: hidden;
+            animation: slideUp 1s ease-in-out;
+        }
+
+        .why-section::before {
+            content: '';
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 150px;
+            height: 150px;
+            background: rgba(46, 125, 50, 0.2);
+            border-radius: 50%;
+            z-index: -1;
+            animation: spin 10s linear infinite;
+        }
+
+        .why-section::after {
+            content: '';
+            position: absolute;
+            bottom: -50px;
+            left: -50px;
+            width: 150px;
+            height: 150px;
+            background: rgba(46, 125, 50, 0.2);
+            border-radius: 50%;
+            z-index: -1;
+            animation: spin 10s linear infinite reverse;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="container"> -->
+
+    
+    <!-- <div class="container"> -->
+        <!-- Section Title -->
+        <div class="section-title">Converting Buying Team</div>
+       
+        <!-- Content Section -->
+        <div class="content">
+            
+            <div class="text-section">
+            <!-- <p>Respops</p> -->
+                <!-- <p>As a developer, your role in the Refurbished Lab Proposed Expansion Project is crucial. Here’s what you will be focusing on:</p> -->
+                <ul>
+                  <li>1. Assess the Current Skills and Gaps <br>
+                 <br>   (a) Evaluate Existing Skills: Understand the current skills of the buying team. Typically, they are adept at negotiation, supplier management, and cost analysis.
+                    <br>(b) Identify Gaps: Recognize the skills needed for sales, such as customer engagement, relationship building, and closing deals.</li>
+                    <li>2. Training and Development <br>
+                        <br>  (a) Sales Training: Provide comprehensive training in sales techniques, customer service, and product knowledge. This could include role-playing, seminars, and workshops.
+                        <br> (b) Soft Skills Training: Focus on communication, persuasion, and active listening skills, which are crucial in sales roles.
+                        <br>(c) Product Knowledge: Ensure the team has deep knowledge of the products or services they will be selling to effectively address customer needs and objections.
+                        </li>
+                </ul>
+            </div>
+            <div class="text-section">
+                <!-- <p>Respops</p> -->
+                    <!-- <p>As a developer, your role in the Refurbished Lab Proposed Expansion Project is crucial. Here’s what you will be focusing on:</p> -->
+                    <ul>
+                      <li>
+                        3. Redefine Roles and Responsibilities<br>
+                        <br>(a) Role Clarification: Clearly define the new roles and responsibilities of the team members in the context of sales.
+                        <br>(b) Set Expectations: Establish new performance metrics and goals related to sales, such as targets for customer acquisition, revenue generation, and customer satisfaction.
+                      </li>
+                      <li>
+                        4. Customer-Centric Focus <br>
+                        <br>(a) Understanding Customer Needs: Shift the team's mindset from being supplier-focused to being customer-centric. Emphasize the importance of understanding and meeting end-user needs.
+                        <br>(b) Building Relationships: Encourage the team to build and nurture long-term relationships with customers, which is key to successful sales.
+                      </li>
+                    </ul>
+                </div>
+    
+          
+        </div>
+
+        <!-- Why Section -->
+        <!-- <div class="why-section">
+            Why?
+            <ul>
+                <li>Implementing the latest technology solutions.</li>
+                <li>Ensuring systems are modern, scalable, and efficient.</li>
+                <li>Integrating new software to enhance functionality.</li>
+                <li>Optimizing current systems for better performance.</li>
+                <li>Developing innovative solutions to streamline operations.</li>
+                <li>Aligning technical aspects with overall project goals.</li>
+            </ul>
+        </div> -->
+        <a href="index.html">Home</a>
+    <!-- </div> -->
+</div>
+</body>
+</html>

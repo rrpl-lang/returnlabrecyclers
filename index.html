@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowchart - Refurbished Proposed Expansion Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e0f7fa;
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .box {
+            background: linear-gradient(145deg, #ffffff, #d1d9e6);
+            box-shadow: 10px 10px 30px #bebebe, -10px -10px 30px #ffffff;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 16px;
+            text-align: center;
+            position: relative;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, opacity 0.5s ease-in-out;
+            cursor: pointer;
+            width: 100%;
+            max-width: 400px;
+            opacity: 0; /* Initially hidden */
+            transform: translateY(20px); /* Initially positioned below */
+            animation: fadeInUp 0.5s ease-in-out forwards;
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+            box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+        }
+
+        .main-box {
+            font-size: 36px;
+            font-weight: 900;
+            color: #004d40;
+            background-color: #a7ffeb;
+            border-radius: 16px;
+            padding: 20px;
+            width: 5000px;
+        }
+
+        .sub-box {
+            font-size: 28px;
+            font-weight: 700;
+            color: #00796b;
+            background-color: #e0f2f1;
+            margin-top: 20px;
+            border-radius: 12px;
+            padding: 10px;
+        }
+
+        .nested-box, .inner-nested-box {
+            background: #b2ebf2;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 12px;
+            font-size: 20px;
+            font-weight: 600;
+            color: #004d40;
+            position: relative;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .inner-nested-box {
+            background: #ffcdd2;
+            font-size: 18px;
+            font-weight: 600;
+            color: #c62828;
+        }
+
+        .nested-box:hover, .inner-nested-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 10px 10px 20px #bebebe, -10px -10px 20px #ffffff;
+        }
+
+        .sub-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            width: 100%;
+            margin-top: 40px;
+            position: relative;
+        }
+
+        .sub-container::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background-color: #00695c;
+            z-index: -1;
+        }
+
+        .sub-container .box {
+            margin: 0 20px;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Main Box -->
+        <div class="box main-box" onclick="navigateTo('index.html')">
+            Refurbished Lab Proposed Project Expansion Report
+        </div>
+
+        <!-- Sub Containers -->
+        <div class="sub-container">
+            <!-- Technology Box -->
+            <div class="box sub-box" onclick="navigateTo('index.html')">
+                Technology
+                <div class="box nested-box" onclick="event.stopPropagation(); navigateTo('developer.html')">Person1 (Developer)</div>
+                <div class="box nested-box" onclick="event.stopPropagation(); navigateTo('digital-marketer.html')">Person2 (Digital Marketer)</div>
+            </div>
+
+            <!-- Sales Team Expansion Box -->
+            <div class="box sub-box" onclick="navigateTo('index.html')">
+                Sales Team Expansion
+                <div class="box nested-box" onclick="event.stopPropagation(); navigateTo('buying-team.html')">Converting Our Buying Team Into End-User Sales Team</div>
+                <div class="box nested-box" onclick="event.stopPropagation(); navigateTo('team-expansion.html')">Expanding the team from 4 to 8 members</div>
+                <div class="box nested-box" onclick="event.stopPropagation(); navigateTo('after-sales-support.html')">Dedicated Employee for After-sales support</div>
+            </div>
+
+            <!-- Dealer Sales Team -->
+            <div class="box sub-box" onclick="navigateTo('index.html')">
+                Dealer Sales Team
+                <div class="box nested-box" onclick="event.stopPropagation(); navigateTo('additional-employee.html')">Filling the vacanct position in our dealer sales team</div>
+                <div class="box nested-box" onclick="event.stopPropagation(); navigateTo('client-database.html')">Expansion And Diversification Of Client Database</div>
+                <div class="box nested-box" onclick="event.stopPropagation(); navigateTo('dealer-support.html')">Dedicated Employee for after sales within the Dealers sales team</div>
+            </div>
+
+            <!-- Dispatch + COD Box -->
+            <div class="box sub-box" onclick="navigateTo('index.html')">
+                Dispatch + COD
+                <div class="box nested-box" onclick="event.stopPropagation(); navigateTo('cod-team.html')">COD Team
+                    <div class="box inner-nested-box" onclick="event.stopPropagation(); navigateTo('cod-implementation.html')">Implementing COD within city limits</div>
+                </div>
+                <div class="box nested-box" onclick="event.stopPropagation(); navigateTo('dispatch-team.html')">Dispatch Team
+                    <div class="box inner-nested-box" onclick="event.stopPropagation(); navigateTo('dispatch-employee.html')">Increasing the capacity of our Dispatch team</div>
+                </div>
+            </div>
+
+            <!-- Renovation Box -->
+            <div class="box sub-box" onclick="navigateTo('renovation.html')">Renovation</div>
+
+            <!-- Innovation Box -->
+            <!-- <div class="box sub-box" onclick="navigateTo('innovation.html')">Innovation</div> -->
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to sequentially display each box with a fade-in effect
+        document.addEventListener("DOMContentLoaded", function () {
+            const boxes = document.querySelectorAll(".box");
+            let delay = 0;
+
+            boxes.forEach((box, index) => {
+                setTimeout(() => {
+                    box.style.opacity = 1;
+                    box.style.transform = "translateY(0)";
+                }, delay);
+                delay += 200; // Increase delay for each subsequent box
+            });
+        });
+
+        // Function to navigate to a new page
+        function navigateTo(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>
